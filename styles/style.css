@@ -1,5 +1,6 @@
 body {
     text-align: center;
+    padding: 5px;
 }
 header {
     background-color: aqua;
@@ -149,6 +150,7 @@ footer {
         }
     footer {
         background-color: chartreuse;
+    }   
 }
 @media (min-width: 992px){
     header {
@@ -182,8 +184,7 @@ footer {
         grid-area: hero;
         display: grid;
         grid-template-areas: 
-        "hero-f"
-        "hero-act";
+        "hero-f hero-act";
         }
             .hero-cont1 {
                 display: block;
@@ -193,16 +194,24 @@ footer {
                 grid-area: hero-act;
             }
         .m-body {
-       
         grid-area: body;
+        grid-template-areas: 
+        "article-fe article-li";
         }
+            .b-cont1 {
+                grid-area: article-fe;
+            }
+            .b-cont2 {
+                grid-area: article-li;
+            }
+            .b-cont3 {
+                display: none;
+            }
         .m-sidebar {
-       
         display: block;
         grid-area: sidebar;
         }
         .m-ads {
-        
         display: block;
         grid-area: ad;
         }
