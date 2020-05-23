@@ -1,0 +1,213 @@
+body {
+    text-align: center;
+}
+header {
+    background-color: aqua;
+    margin-bottom: 10px;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "brand brand"
+    "global-nav tools";
+}
+    .h-cont1 {
+        border-radius: 5px;
+        border-color: black;
+        border-style: solid;
+        grid-area: brand;
+    }
+    .h-cont2 {
+        border-radius: 5px;
+        border-color: black;
+        border-style: solid;
+        grid-area: global-nav;
+    }
+    .h-cont3 {
+        border-radius: 5px;
+        border-color: black;
+        border-style: solid;
+        grid-area: tools;
+    }
+
+main {
+    background-color: blue;
+    display: grid;
+    gap: 10px;
+    
+}
+    .m-hero {
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    }
+        .hero-cont1 {
+            display: none;
+        }
+    .m-body {
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    display: grid;
+    gap: 5px;
+    grid-template-areas: 
+    "article-f"
+    "advertisement"
+    "article-listing";
+    }
+        .b-cont1 {
+            grid-area: article-f;
+        }
+        .b-cont2 {
+            grid-area: article-listing;
+        }
+        .b-cont3 {
+            grid-area: advertisement;
+        }
+    .m-sidebar {
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    display: none;
+    }
+    .m-ads {
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    display: none;
+    }
+footer {
+    background-color: chartreuse;
+    margin-top: 10px;
+}
+@media (min-width: 576px){
+   
+    header {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: 
+        "brand global-nav tools";
+    }
+        .h-cont1 {
+           
+            grid-area: brand;
+        }
+            p {
+                text-align: left;
+                padding: 20px;
+            }
+        .h-cont2 {
+           
+            grid-area: global-nav;
+        }
+        .h-cont3 {
+           
+            grid-area: tools;
+        }
+    
+    main {
+        background-color: blue;
+        display: grid;
+        
+    }
+        .m-hero {
+        
+        display: grid;
+        grid-template-areas: 
+        "hero-f"
+        "hero-act";
+        }
+            .hero-cont1 {
+                display: block;
+                grid-area: hero-f;
+            }
+            .hero-cont2 {
+                grid-area: hero-act;
+            }
+        .m-body {
+       
+        display: grid;
+        grid-template-areas: 
+        "article-f ads"
+        "article-li article-li";
+        }
+            .b-cont1 {
+                grid-area: article-f;
+            }
+            .b-cont2 {
+                grid-area: article-li;
+            }
+            .b-cont3 {
+                grid-area: ads;
+            }
+        .m-sidebar {
+      
+        display: block;
+        }
+        .m-ads {
+      
+        display: none;
+        }
+    footer {
+        background-color: chartreuse;
+}
+@media (min-width: 992px){
+    header {
+        padding: 10px;
+        display: grid;
+        margin-bottom: 20px;
+        grid-template-areas: 
+        "brand global-nav tools";
+    }
+        .h-cont1 {
+       
+            grid-area: brand;
+        }
+        .h-cont2 {
+        
+            grid-area: global-nav;
+        }
+        .h-cont3 {
+            grid-area: tools;
+        }
+    
+    main {
+        padding: 10px;
+        display: grid;
+        grid-template-areas: 
+        "hero ad"
+        "body sidebar";
+        
+    }
+        .m-hero {
+        grid-area: hero;
+        display: grid;
+        grid-template-areas: 
+        "hero-f"
+        "hero-act";
+        }
+            .hero-cont1 {
+                display: block;
+                grid-area: hero-f;
+            }
+            .hero-cont2 {
+                grid-area: hero-act;
+            }
+        .m-body {
+       
+        grid-area: body;
+        }
+        .m-sidebar {
+       
+        display: block;
+        grid-area: sidebar;
+        }
+        .m-ads {
+        
+        display: block;
+        grid-area: ad;
+        }
+    footer {
+        background-color: chartreuse;
+    }
+
+}
