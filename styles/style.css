@@ -1,9 +1,14 @@
 body {
     text-align: center;
     padding: 5px;
+    font-family: cursive;
+    color: rgb(231, 238, 189);
+    background-image: url(/img/strawberry.jpg);
+    background-size: cover;
+    background-position: center;
 }
 header {
-    background-color: aqua;
+   
     margin-bottom: 10px;
     display: grid;
     gap: 5px;
@@ -28,6 +33,42 @@ header {
         border-color: black;
         border-style: solid;
         grid-area: tools;
+        display: grid;
+        grid-template-areas: "fb tv in";
+        justify-content: flex-end;
+    }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa {
+            padding: 10px;
+            font-size: 15px;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 40px;
+        }
+        .fa-facebook {
+            background: transparent;
+            color: white;
+            grid-area: fb;
+        }
+        .fa-twitter {
+            background: transparent;
+            color: white;
+            grid-area: tv;
+        }
+        .fa-instagram {
+            background: transparent;
+            color: white;
+            grid-area: in;
+        }
+    hr.style-four {
+        height: 12px;
+        border: 0;
+        box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
     }
 
 main {
