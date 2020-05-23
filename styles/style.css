@@ -2,18 +2,22 @@ body {
     text-align: center;
     padding: 5px;
     font-family: 'Dancing Script', cursive;
-    color: rgba(255, 255, 255, 0.81);
+    color: white;
     background-image: url(/img/strawberry.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-#nolink {
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.81);
+h2 {
+    font-size: 2.0rem;
+}
+p {
+    font-size: 1.5rem;
+}
+.nolink {
+    color: white;
 }
 header {
-   
     margin-bottom: 10px;
     display: grid;
     gap: 5px;
@@ -22,25 +26,23 @@ header {
     "global-nav tools";
 }
     .h-cont1 {
-        border-radius: 5px;
-        border-color: black;
-        border-style: solid;
         grid-area: brand;
+        align-self: center;
     }
     .h-cont2 {
-        border-radius: 5px;
-        border-color: black;
-        border-style: solid;
-        grid-area: global-nav;
-    }
+         grid-area: global-nav;
+         align-self: center;
+    }  
+    .h-cont2:hover {
+        opacity: 0.7;
+        transform: scale(1.5);
+    }    
     .h-cont3 {
-        border-radius: 5px;
-        border-color: black;
-        border-style: solid;
         grid-area: tools;
         display: grid;
         grid-template-areas: "fb tv in";
         justify-content: flex-end;
+        align-self: center;
     }
         .fa:hover {
             opacity: 0.7;
@@ -77,18 +79,22 @@ header {
     }
 
 main {
-    background-color: blue;
+    background-color: #00ff7833;
     display: grid;
     gap: 10px;
     
 }
-    .m-hero {
+    /* .m-hero {
     border-radius: 5px;
     border-color: black;
     border-style: solid;
-    }
+    } */
         .hero-cont1 {
             display: none;
+        }
+        .hero-cont2:hover {
+            opacity: 0.7;
+        transform: scale(1.5);
         }
     .m-body {
     border-radius: 5px;
@@ -111,15 +117,9 @@ main {
             grid-area: advertisement;
         }
     .m-sidebar {
-    border-radius: 5px;
-    border-color: black;
-    border-style: solid;
     display: none;
     }
     .m-ads {
-    border-radius: 5px;
-    border-color: black;
-    border-style: solid;
     display: none;
     }
 footer {
@@ -154,7 +154,6 @@ footer {
         }
     
     main {
-        background-color: blue;
         display: grid;
         
     }
@@ -229,15 +228,18 @@ footer {
         .m-hero {
         grid-area: hero;
         display: grid;
+        grid-template-columns: 50% 50%;
         grid-template-areas: 
         "hero-f hero-act";
         }
             .hero-cont1 {
                 display: block;
                 grid-area: hero-f;
+                align-self: center;
             }
             .hero-cont2 {
                 grid-area: hero-act;
+                align-self: center;
             }
         .m-body {
         grid-area: body;
@@ -265,6 +267,7 @@ footer {
             width: 300px;
             height: auto;
         }
+        
     
 
 }
