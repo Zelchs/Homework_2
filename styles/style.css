@@ -1,11 +1,12 @@
 body {
     text-align: center;
     padding: 5px;
-    font-family: cursive;
-    color: rgb(231, 238, 189);
+    font-family: 'Dancing Script', cursive;
+    color: rgba(255, 255, 255, 0.81;
     background-image: url(/img/strawberry.jpg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 header {
    
@@ -118,8 +119,9 @@ main {
     display: none;
     }
 footer {
-    background-color: chartreuse;
+    text-align: left;
     margin-top: 10px;
+    font-size: 10px;
 }
 @media (min-width: 576px){
    
@@ -189,9 +191,7 @@ footer {
       
         display: none;
         }
-    footer {
-        background-color: chartreuse;
-    }   
+    
 }
 @media (min-width: 992px){
     header {
@@ -256,8 +256,6 @@ footer {
         display: block;
         grid-area: ad;
         }
-    footer {
-        background-color: chartreuse;
-    }
+    
 
 }
