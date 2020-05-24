@@ -3,7 +3,7 @@ body {
     padding: 5px;
     font-family: 'Dancing Script', cursive;
     color: white;
-    background-image: url(/img/strawberry.jpg);
+    background-image: url(../img/strawberry.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
